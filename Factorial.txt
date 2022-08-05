@@ -1,7 +1,3 @@
-#include <iostream>
-using namespace std;
- 
-
 unsigned int factorial(unsigned int n)
 {
     if (n == 0)
@@ -9,11 +5,9 @@ unsigned int factorial(unsigned int n)
     return n * factorial(n - 1);
 }
  
-
 int main()
 {
     int num = 5;
-    cout << "Factorial of "
-         << num << " is " << factorial(num) << endl;
+    printf("Factorial of %d is %d", num, factorial(num));
     return 0;
 }
